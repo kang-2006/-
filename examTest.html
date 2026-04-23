@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>诗词答题测评</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="test-page">
+  <div class="progress">
+    第<span id="nowIndex">1</span>题 / 共<span id="totalNum">6</span>题
+  </div>
+
+  <div class="question-card" id="quizBox">
+    <div class="q-text" id="questText"></div>
+    <div class="options" id="optionBox"></div>
+    <div class="analysis" id="analyBox" style="display:none">
+      解析：<span id="analyText"></span>
+    </div>
+    <div class="btn-group">
+      <div class="submit-btn" id="submitAns">提交答案</div>
+      <div class="next-btn" id="nextQuest">下一题</div>
+      <div class="finish-btn" id="endQuiz">查看结果</div>
+    </div>
+  </div>
+
+  <div class="result-page" id="resultBox" style="display:none">
+    <div class="result-title">答题完成</div>
+    <div class="score">得分：<span id="correctNum">0</span> / <span id="allNum">6</span></div>
+    <div class="rate">正确率：<span id="rateText">0%</span></div>
+    <div class="back-btn" id="backStart">返回重新生成</div>
+  </div>
+</div>
+<script src="examTest.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>文豪专属对话</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="chat-list" id="chatScroll">
+      <div id="chatBox"></div>
+      <div id="loadingDom" class="loading-item" style="display:none">
+        <div class="loading-bubble">
+          <div class="loading-dot"></div>
+          <div class="loading-dot"></div>
+          <div class="loading-dot"></div>
+        </div>
+      </div>
+    </div>
+    <div class="input-box">
+      <input class="input" id="msgInput" placeholder="写下你想说的话..." maxlength="500">
+      <button class="send-btn" id="sendBtn">发送</button>
+    </div>
+  </div>
+<script src="config.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

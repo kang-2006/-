@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>诗词详情赏析</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-container">
+    <div class="content-scroll">
+      <div class="content-card">
+        <div class="page-title">诗文译文赏析</div>
+        <div class="poem-original">
+          <div class="poem-title" id="showTitle"></div>
+          <div class="poem-author" id="showAuthor"></div>
+          <div class="poem-content" id="showContent"></div>
+        </div>
+        <div class="tab-bar">
+          <div class="tab-item active" data-tab="0">译文</div>
+          <div class="tab-item" data-tab="1">赏析</div>
+        </div>
+        <div class="tab-content">
+          <div class="content-text" id="transText"></div>
+          <div class="content-text hide" id="apprText"></div>
+        </div>
+        <div class="back-btn">返回</div>
+      </div>
+    </div>
+  </div>
+<script src="appreciationDetail.js"></script>
+</body>
+</html>
